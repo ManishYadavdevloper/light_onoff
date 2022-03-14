@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light on/off on click</title>
+    <style>
+        img{
+            height: 500px;
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <img id="Light" src="img/offblub.png" alt="" onclick="lightonoff()">
+    <p>Clik on blub for Light on/off</p>
+    <script>
+        function lightonoff()
+        {
+        var image = document.getElementById('Light');
+        if(image.src.match("Onbulb"))
+            image.src ="img/offblub.png";
+        else
+            image.src ="img/Onblub.png";
+        }
+    </script>
+</body>
+</html>
