@@ -13,16 +13,16 @@
     </style>
 </head>
 <body>
-    <img id="Light" src="img/offblub.png" alt="" onclick="lightonoff()">
+    <img id="Light" src="offblub.png" alt="" onclick="lightonoff()">
     <p>Clik on blub for Light on/off</p>
     <script>
         function lightonoff()
         {
         var image = document.getElementById('Light');
         if(image.src.match("Onbulb"))
-            image.src ="img/offblub.png";
+            image.src ="offblub.png";
         else
-            image.src ="img/Onblub.png";
+            image.src ="Onblub.png";
         }
     </script>
 </body>
